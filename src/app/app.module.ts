@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -9,19 +10,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AboutComponent } from './pages/about/about.component';
 import { Error404Component } from './pages/error404/error404.component';
 import { NavegacaoComponent } from './navegacao/navegacao.component';
+import { AppShellComponent } from './app-shell.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    AppShellComponent,
+    NavegacaoComponent,
     HeaderComponent,
-    FooterComponent,
-    HomeComponent,
-    AboutComponent,
-    Error404Component,
-    NavegacaoComponent
+    FooterComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule
   ],
